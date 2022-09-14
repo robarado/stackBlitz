@@ -30,6 +30,7 @@ const validarRepeticoes = (string) => {
   let ini = 4;
   let fim = 10;
   let isValid = true;
+  // SITE REFERÊNCIA: https://diegomariano.com/lacos-de-repeticao-2/
   do { // FAÇA
     let truncated_text = string.slice(ini, fim); // REGRA
     if ( // REGRA 2

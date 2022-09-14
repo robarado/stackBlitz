@@ -30,9 +30,9 @@ const validarRepeticoes = (string) => {
   let ini = 4;
   let fim = 10;
   let isValid = true;
-  do {
-    let truncated_text = string.slice(ini, fim);
-    if (
+  do { // FAÇA
+    let truncated_text = string.slice(ini, fim); // REGRA
+    if ( // REGRA 2
       truncated_text[0] == truncated_text[1] &&
       truncated_text[1] == truncated_text[2] &&
       truncated_text[2] == truncated_text[3] &&
@@ -43,7 +43,7 @@ const validarRepeticoes = (string) => {
     }
     ini++;
     fim++;
-  } while (fim <= string.length && isValid);
+  } while (fim <= string.length && isValid); // ENQUANTO
   return isValid;
 };
 
